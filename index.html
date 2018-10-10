@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="edit" id="edit" style="display:none;">
+        <div class="toys clearfix">
+            <span>
+                字体：
+                <select id="select-family">
+                    <option value="Microsoft Yahei">请选择</option>
+                    <option value="SimSun">1</option>
+                    <option value="KaiTi">2</option>
+                </select>
+            </span>
+            <span>
+                字号：
+                <select id="select-size">
+                    <option value="0">请选择</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </span>
+            <span>
+                颜色：
+                <a id="select-color" href="javascript:;">
+                    请选择 <span class="auto-show-color"></span>
+                    <div class="color-list">
+                        <div class="selected-color clearfix">
+                            <span class="auto-color" id="auto-color"></span>
+                            自动
+                        </div>
+                        <div class="color-collection">
+                            <span style="background:#01f345;"></span>
+                            <span style="background:#9847ac;"></span>
+                            <span style="background:#111d15;"></span>
+                            <span style="background:#505250;"></span>
+                            <span style="background:#899737;"></span>
+                            <span style="background:#f301aa;"></span>
+                            <span style="background:#a4a8a3;"></span>
+                            <span style="background:#02300f;"></span>
+                            <span style="background:#7e01f3;"></span>
+                        </div>
+                    </div>
+                </a>
+            </span>
+        </div>
+        <div class="style">
+           <a href="javascript:;"><span class="style-bold">B</span></a>
+           <a href="javascript:;"><span class="style-italic" style="font-style:italic;">I</span></a>
+           <a href="javascript:;"><span class="style-underline">U</span></a>
+        </div>
+        <div class="content">
+            <p contenteditable="true" class="text" id="text">189895高维宝2598416263</p>
+            <div class="operate-button">
+                <span class="save">保存</span>
+            </div>
+        </div>
+    </div>
+    <div class="edit" id="show">
+        <div class="content" style="height:100%;">
+            <p class="text">189895高维宝2598416263</p>
+            <div class="operate-button">
+                <span class="expand">放大</span>
+                <span class="delete">删除</span>
+                <span class="edit-content">编辑</span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
